@@ -1,3 +1,6 @@
+html {
+  max-width: 750px;
+}
 .page{
   background: #FFFFFF;
   padding: 0 15px;
@@ -176,14 +179,11 @@ h1{
 
 .hero_text{
   background: grey;
-  max-width: 200px;
-  width:min-content;
+  max-width: 600px;
+  min-height: 300px;
+  text-align: left;
+  bottom: 20px;
 
-  hyphens: manual;
-
-  overflow: auto;
-
-  resize: both;
   
   word-spacing: 4px;
 }
@@ -199,6 +199,57 @@ h1{
  height: 60px;
  overflow: hidden;
  text-overflow: ellipsis;
- white-space: pre-wrap;
+ white-space: nowrap;
 
+}
+
+.page{
+ /* background-image: url('/img/test2.jpg');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;*/
+}
+
+.hero_text{
+  padding: 40px;
+  color:#fff;
+  border-image-source: url('/img/test2.jpg');
+  border-image-slice: 5%;
+  border-image-width: 5%;
+  border-image-repeat: stretch;
+  border-image-outset: 10px;
+  
+}
+
+.card_block{
+  /*list-style-type: square;*/
+  list-style-position: inside;
+  list-style-image: linear-gradient(
+    to bottom right,blue,
+    red
+  );
+  padding: 0;
+}
+
+.card_description_item{
+  display: list-item;
+}
+
+.table tr{
+  border: 1px solid #1c1a1a;
+}
+
+.table tr td{
+  border: 1px solid #726b6b;
+  border-bottom-color:red;
+  border-right-color:blue ;
+}
+
+.table{
+  table-layout: auto;
+  width: 200ppx;
+  border-collapse: unset;
+  border-spacing: 10px;
+  caption-side: top;
+  empty-cells: hide;
 }
