@@ -6,7 +6,9 @@
 
     <nav class="header_nav">
         <div class="header_nav_right">
-            {{> navLinks list=header}}
+            {{#each links}}
+        <a href='{{url}}' class='nav_link'>{{text}}</a>
+      {{/each}}
         </div>
     </nav>
 </div>
