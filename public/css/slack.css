@@ -171,11 +171,8 @@ body{
     flex-wrap: wrap;
 }
 
-.hero_image{
-    position: absolute;
-    left:580px;
-    top:0
-
+.hero_img{
+    max-width: 100%;
 }
 
 .hero_label{
@@ -385,8 +382,7 @@ body{
             max-width: var(--page-width-medium);
         }
     
-        .hero_image{
-            left:518px;
+        .hero_img{
             height: 300px;
         }
     }
@@ -396,10 +392,8 @@ body{
             max-width: var(--page-width-small);
         }
 
-        .hero_image{
-            position: static;
-            width: 100%;
-            order: -1;
+        .hero{
+            flex-direction: column;
         }
 
         .hero_content{
